@@ -1,4 +1,4 @@
-## Ingress Controller for Nginx
+## Reverse Proxy Demo Setup using Docker and Nginx
 
 This project demonstrates the setup of two simple web servers using Nginx, hosting straightforward webpages on them.
 
