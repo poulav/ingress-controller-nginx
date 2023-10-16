@@ -3,16 +3,16 @@ services:
   proxy: 
     build: ./
     networks:
-      - web-service-1
-      - web-service-2
+      - web-service-nginx
+      - web-service-nginx-2
     ports:
       - 80:80
       - 443:443
     
 networks:
-  web-service-1:
-    name: web-service-nginx-2_default
-    external: true
-  web-service-2:
+  web-service-nginx:
     name: web-service-nginx_default
+    external: true
+  web-service-nginx-2:
+    name: web-service-nginx-2_default
     external: true
